@@ -111,8 +111,8 @@ ls -al
 # sed -i '/buildinfo/d; /\.bin/d; /\.manifest/d' sha256sums
 rm -rf packages *.buildinfo *.manifest *.bin sha256sums
 
-# rm -f *.img.gz
-# gzip -f *.img
+rm -f *.img.gz
+gzip -f *.img
 
 mv -f *.img.gz "${WORK_PATH}"
 
